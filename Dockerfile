@@ -12,4 +12,8 @@ RUN apt-get update && apt-get install -y \
     python3-pytest \
     protobuf-compiler
 
+RUN pip3 install --upgrade pip
+RUN pip3 install pyinstaller
+RUN pip3 install --upgrade keyrings.alt
+
 CMD ["/bin/bash"]
