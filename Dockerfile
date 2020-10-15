@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip3 install --upgrade pip
 RUN pip3 install pyinstaller
+RUN pip3 install twine
 RUN pip3 install --upgrade keyrings.alt
 
 CMD ["/bin/bash"]
